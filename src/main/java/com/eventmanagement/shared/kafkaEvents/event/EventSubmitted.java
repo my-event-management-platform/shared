@@ -10,13 +10,18 @@ import java.time.Instant;
 @Getter
 @Setter
 public class EventSubmitted extends KafkaEvent {
-    public EventSubmitted(EventDTO eventDTO) {
+    public EventSubmitted() {
         this.timestamp = Instant.now();
-        this.event = eventDTO;
     }
     @Override
     public String getTopic() {
         return "event-submitted-kafka-events";
     }
-    private EventDTO event;
+    private String id;
+    private String title;
+    private String text;
+    private String location;
+    private Instant datetime;
+    private Integer capacity;
+
 }
