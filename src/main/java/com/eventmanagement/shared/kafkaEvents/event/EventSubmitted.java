@@ -15,10 +15,6 @@ public class EventSubmitted extends KafkaEvent {
         this.event = eventDTO;
     }
     @Override
-    public String getEventType() {
-        return "EventSubmitted";
-    }
-    @Override
     public String getTopic() {
         return "event-submitted-kafka-events";
     }

@@ -9,7 +9,6 @@ import java.time.Instant;
 @Setter
 public abstract class KafkaEvent {
     protected Instant timestamp;
-    public abstract String getEventType();
     public abstract String getTopic();
 
 }
