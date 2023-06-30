@@ -10,7 +10,7 @@ import java.time.Instant;
 @Getter
 public class EventResponseDTO {
     String id;
-    String createdBy;
+    String userId;
     String title;
     String location;
     Instant datetime;
