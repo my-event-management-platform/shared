@@ -11,6 +11,7 @@ import java.time.Instant;
 
 @Getter
 @Setter
+@AllArgsConstructor
 public class EventReviewed extends KafkaEvent {
     @Override
     public String getTopic() {
