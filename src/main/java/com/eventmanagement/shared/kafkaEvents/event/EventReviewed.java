@@ -8,9 +8,17 @@ import java.time.Instant;
 
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
 public class EventReviewed extends KafkaEvent {
+    public EventReviewed(String eventId, ReviewDecision reviewDecision) {
+        super();
+        this.eventId = eventId;
+        this.reviewDecision = reviewDecision;
+    }
+
+    public EventReviewed() {
+        super();
+    }
+
     @Override
     public String getTopic() {
         return "event-reviewed-kafka-events";
