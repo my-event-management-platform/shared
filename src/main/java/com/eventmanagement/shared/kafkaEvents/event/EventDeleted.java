@@ -13,6 +13,10 @@ public class EventDeleted extends KafkaEvent {
         this.eventId = eventId;
     }
 
+    public EventDeleted() {
+        super();
+    }
+
     @Override
     public String getTopic() {
         return "event-deleted-kafka-events";
