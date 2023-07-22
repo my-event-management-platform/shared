@@ -9,8 +9,6 @@ import lombok.Setter;
 @Setter
 public class BookingDTO {
     @NotEmpty
-    private String userId;
-    @NotEmpty
     private String eventId;
     @Min(1)
     private Integer persons;
