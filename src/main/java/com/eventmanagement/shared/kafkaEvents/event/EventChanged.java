@@ -17,6 +17,4 @@ public class EventChanged extends KafkaEvent {
     private String text;
     private String location;
     private Instant datetime;
-    private Integer capacity;
-    private String userId;
 }
